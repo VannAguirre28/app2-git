@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS -->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquety.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/evolucion.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Telefonia Celular </h1>
+</div>
+<div>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/evolucion.jpg',1)"><img src="imagenes/telef.jpg" width="624" height="352" id="Image13"></a></p>
+</div>
+
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme=a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> ¿Qué es un telefono celular? </h2>
+<p> Se muestra la definicion </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Historia de la telefonia celular </h2>
+<p> Se muestra su historia </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Clasificacion de la telefonia celular </h2>
+<p> Muestra la clasificacion de los telefonos </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-chld">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Compañias telefonicas en Mexico </h2>
+<p> Muestra las telefonias celulares que maneja Mexico</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Telefonias celulares del futuro </h2>
+<p> Muestra las telefonias celulares futuras </p>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" widht="46" height="46">
+</div>
+<div> 
+<h4> Aplicacion Dos </h4>
+<h4>Vanessa Ramirez Aguirre </h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Definicion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Aparato telefónico de pequeño tamaño, portátil, sin hilos ni cables externos, para poder hablar desde cualquier lugar, siempre que sea dentro del área de cobertura del servicio que lo facilita. </h2>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Telefono celular </h1>
+<div>
+<p> Estos son telefonos celulares: </p>
+</div>
+<div>
+<img src="imagenes/telefonos.jpg" width="50%" height="50%"></div>
+</div>
+ </div>
+  
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Otros Telefonos celulares </h1>
+<div>
+<p> Estos son otros telefonos celulares: </p>
+</div>
+<div>
+<img src="imagenes/otrostelef.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Historia</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La historia de la telefonía celular se remonta a los años 40s, cuando motivada por la segunda guerra mundial, la empresa Motorola desarrollo un teléfono móvil llamado Handie Talkie H12-16, este aparato usaba ondas de radio que para ese momento no superaban los 60 MHz. Desde este momento, hasta principios de los años 80s diversas compañías investigaron y buscaron ofrecer un sistema de comunicación a distancia para el público general.La historia de la telefonía celular esta estrechamente ligada al desarrollo y evolución de la radio, los primeros teléfonos móviles eran demasiado grandes y pesados, por lo que su uso se restringió en principio a los autos. El primer teléfono móvil fue el NMT 450 (Nordic Mobile Telephony 450 MHz), desarrollado por Ericsson, este aparato ,todavía usaba las señales de radio con modulación de frecuencia.La segunda generación nace a principios de los años 90s, utiliza sistemas GSM, IS-136, iDEN e IS-95 con frecuencias de 900 y 1800 MHz.
+En esta generación se abandona el uso de ondas de radio y se da paso a la era digital de las comunicaciones. Esto ofrece grandes ventajas como la calidad de voz, mejora en la seguridad y bajos costos de operación. La tercera generación se caracteriza por ampliar características como ancho de banda y manejo de datos y ofrecer nuevos servicios como la teleconferencia, televisión , acceso pleno a internet y descarga de archivos. La generación 4, o 4G será la evolución tecnológica que ofrecerá al usuario de telefonía móvil un mayor ancho de banda que permitirá, entre muchas otras cosas, la recepción de televisión en Alta Definición  </h2>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Evolucion celular celular </h1>
+<div>
+<p> Asi es como los telefonos fueron evolucionando: </p>
+</div>
+<div>
+<img src="imagenes/evolucion.jpg" width="50%" height="50%"></div>
+</div>
+ </div>
+  
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1> Clasificacion</h1>
+ </div>
+   <div data-role="content" align="center">
+   <div>
+     <h2> Gama Alta </h2>
+     <h3> ofrece todas (o casi todas) las funciones disponibles en el mercado a la fecha, practicamente sin las limitaciones de los de gama baja y media, todo en muy alta calidad y a un alto costo </h3>
+     
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Telefonos de gama alta </h1>
+<div>
+<p> Estos son telefonos de gama alta: </p>
+</div>
+<div>
+<img src="imagenes/gamalta.jpg" width="50%" height="50%">
+</div>
+</div>
+</div>
+
+<h2>Gama Media </h2>
+     <h3> Tiene funciones básicas y muchas de las funciones de los de gama alta pero a un costo relativamente accesible. </h3>
+     
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Telefonos de gama media </h1>
+<div>
+<p> Estos son telefonos de gama media: </p>
+</div>
+<div>
+<img src="imagenes/gamamedia.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+
+<h2>Gama Baja </h2>
+<h3>Solo sirve para llamar y recibir llamada, enviar y recibir sms, no tienen internet ni soporte para aplicaciones. Tiene funciones básicas y es barato </h3>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Telefonos de gama baja </h1>
+<div>
+<p> Estos son telefonos de gama baja: </p>
+</div>
+<div>
+<img src="imagenes/gamabaja.jpg" width="50%" height="50%"></div>
+</div>
+ </div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, VRA</h4>
+ </div>
+</div>
+     
+     
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Compañias Mexicanas</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Compañias </h1>
+<div>
+<p> Estos son algunas compañias que hay en Mexico: </p>
+</div>
+<div>
+<img src="imagenes/companias.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+ <h2> Telcel (subsidiaria de América Móvil): operando bajo TDMA (Análogo y Digital), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSPA+ y (LTE) (4G) con un 72.23% de cobertura en el país.</h2>
+<h2>Movistar: operando también bajo los estándares CDMA (Digital), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSDPA (3.5G), HSUPA (3.75G) y LTE (4G) con un 56.78% de cobertura en el país.</h2>
+<h2>AT&T México: operando bajo CDMA (Digital) y EV-DO (3G sobre CDMA), GSM (2G), GPRS (2.5G), EDGE (2.75G), UMTS (3G), HSPA+ (3.9G) y 4G LTE (en algunas ciudades solamente), utiliza también iDEN y HSDPA, con un 73.54% de cobertura en el país.</h2>
+<h2>Unefon que opera bajo la red de AT&T </h2>
+<h2> La operadora AT&T anunció a finales de 2014 su entrada al mercado mexicano con la compra de los activos de las empresas Nextel y Iusacell</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Otras compañias </h1>
+<div>
+<p> Estas son otras compañias telefonicas en Mexico: </p>
+</div>
+<div>
+<img src="imagenes/compmex.jpg" width="50%" height="50%"></<div>
+</div>
+ </div>
+ </div>
+   
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Dos, VRA </h4>
+ </div>
+</div>
+         
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> Telefonos celulares del futuro </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>1. Pantallas flexibles </h2>
+<h3>Smartphones cilíndricos cuya pantalla pudiera desplegarse como un rollo en caso de necesitarlo. </h3>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Telefonos con pantallas flexibles </h1>
+<div>
+<p> Asi son las pantallas flexibles: </p>
+</div>
+<div>
+<img src="imagenes/pantflexible.jpg" width="50%" height="50%">
+</div>
+</div>
+</div>
+
+<h2>2. Nuevas formas de autenticación</h2>
+ <h3>Compañías como Qualcomm están desarrollando nuevos sensores de huellas integrados en la pantalla del equipo, Fujitsu están desarrollando tecnología de reconocimiento de iris no invasiva, y así ya tenemos un equipo con cámaras capaces de diferenciar el ojo del usuario.</h3>
+<h2>3. Baterías más duraderas</h2>
+<h3>Hay avances en las baterías de iones de aluminio, aunque todavía estas baterías están en una fase inicial. El desarrollo tanto de la carga rápida inalámbrica como por los conectores USB tipo C permitirá que duremos menos tiempo pegados a la pared, a la hora de cargar los celulares del futuro.  </h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Baterias duraderas </h1>
+<div>
+<p> La baterias duraran mas tiempo: </p>
+</div>
+<div>
+<img src="imagenes/batdurad.jpg" width="50%" height="50%">
+</div>
+</div>
+</div>
+
+<h2>4. Sensores 3D</h2>
+<h3>Por el momento consiste en una tableta que tiene varias cámaras que le permiten analizar y entender su entorno.Esta tecnología podría ser el futuro de la realidad aumentada en los móviles. Google I/O presentó su proyecto Soli, que por medio de un pequeño sonar, se podrá interactuar con los dispositivos sin tocarlos.  </h3>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Sensores </h1>
+<div>
+<p> Los sensores 3D son tabletas: </p>
+</div>
+<div>
+<img src="imagenes/sensores.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion, Dos VRA </h4>
+</div>
+</div>
+
+</body>
+</html>
